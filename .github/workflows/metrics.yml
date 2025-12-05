@@ -136,4 +136,4 @@ jobs:
           user: rselbach
           template: classic
           base: ''
-          config_timezone: ${{ secrets.USER_TIMEZONE }
+          config_timezone: ${{ secrets.USER_TIMEZONE }}
