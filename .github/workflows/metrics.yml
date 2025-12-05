@@ -124,18 +124,6 @@ jobs:
           base: repositories
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
-  notables:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.notable.svg
-          token:  ${{ secrets.METRICS_SECRET }}
-          base: ""
-          plugin_notable: yes
-          plugin_notable_repositories: yes
-          plugin_notable_from: all
-
   # languages:
   #   runs-on: ubuntu-latest
   #   steps:
