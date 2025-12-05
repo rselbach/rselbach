@@ -6,20 +6,21 @@
   <img align="center" width="49%" src="./repositories.svg" />
 </a>
 <a href="https://github.com/rselbach">
-  <img align="center" width="49%" src="./acti_comm.svg" />
+  <img align="center" width="49%" src="./activities.svg" />
 </a>
 
 <a href="https://github.com/rselbach">
-  <img align="center" width="49%" src="./iso_calender.svg" />
+  <img align="center" width="49%" src="./calendar.svg" />
 </a>
 
-<a href="https://github.com/rselbach">
-    <img align="center" width="49%" src="./issue_pr_lang.svg" />
-</a>
-
-<a href="https://github.com/rselbach">
-  <img align="center" width="49%" src="./github-habits.svg" />
-</a>
 <a href="https://rselbach.com">
     <img align="center" width="49%" src="./blog.svg" />
+</a>
+
+<a href="https://github.com/rselbach">
+    <img align="center" width="49%" src="./languages.svg" />
+</a>
+
+<a href="https://github.com/rselbach">
+    <img align="center" width="49%" src="./lines-of-code.svg" />
 </a>

@@ -23,7 +23,7 @@ jobs:
           template: classic
           plugin_rss_source: https://rselbach.com/feed/
 
-  github-metrics:
+  header:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
@@ -50,12 +50,12 @@ jobs:
           base: "repositories"
           plugin_lines: yes
 
-  acti_comm:
+  activities:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: acti_comm.svg
+          filename: activities.svg
           # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
@@ -67,12 +67,12 @@ jobs:
           base: activity, community
           config_timezone: ${{ secrets.USER_TIMEZONE }}
 
-  iso_calender:
+  calendar:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          filename: iso_calender.svg
+          filename: calendar.svg
           # You'll need to setup a personal token in your secrets.
           token: ${{ secrets.METRICS_SECRET }}
           # GITHUB_TOKEN is a special auto-generated token used for commits
@@ -86,43 +86,23 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
 
-  habits:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: github-habits.svg
-          token: ${{ secrets.METRICS_SECRET }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-          config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
-          user: rselbach
-          base: ""
-          template: classic
-          plugin_habits: yes
-          plugin_habits_from: 20       # Use 200 events to compute habits
-          plugin_habits_days: 14        # Keep only events from last 14 days
-          plugin_habits_charts: yes     # Display charts section
-          plugin_habits_trim: yes       # Trim unused hours on daily chart
-
-  issue_pr_lang:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: issue_pr_lang.svg
-          # You'll need to setup a personal token in your secrets.
-          token: ${{ secrets.METRICS_SECRET }}
-          # GITHUB_TOKEN is a special auto-generated token used for commits
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
-
-          # Options
-          user: rselbach
-          template: classic
-          base: ""
-          config_timezone: ${{ secrets.USER_TIMEZONE }}
-          plugin_followup: yes
-          plugin_languages: yes
-
+  # habits:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: lowlighter/metrics@latest
+  #       with:
+  #         filename: github-habits.svg
+  #         token: ${{ secrets.METRICS_SECRET }}
+  #         committer_token: ${{ secrets.GITHUB_TOKEN }}
+  #         config_timezone: ${{ secrets.USER_TIMEZONE }} # Set timezone
+  #         user: rselbach
+  #         base: ""
+  #         template: classic
+  #         plugin_habits: yes
+  #         plugin_habits_from: 20       # Use 200 events to compute habits
+  #         plugin_habits_days: 14        # Keep only events from last 14 days
+  #         plugin_habits_charts: yes     # Display charts section
+  #         plugin_habits_trim: yes       # Trim unused hours on daily chart
 
   repositories:
     runs-on: ubuntu-latest
@@ -140,3 +120,20 @@ jobs:
           template: classic
           base: repositories
           config_timezone: ${{ secrets.USER_TIMEZONE }}
+
+  languages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: languages.svg
+          token: ${{ secrets.METRICS_SECRET }}
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_details: bytes-size, percentage
+
+          # Options
+          user: rselbach
+          template: classic
+          base: ''
+          config_timezone: ${{ secrets.USER_TIMEZONE }
