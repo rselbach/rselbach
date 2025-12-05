@@ -47,7 +47,7 @@ jobs:
           filename: lines-of-code.svg
           token: ${{ secrets.METRICS_SECRET }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          base: "repositories"
+          base: ""
           plugin_lines: yes
 
   activities:
