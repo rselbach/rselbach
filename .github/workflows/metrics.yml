@@ -19,10 +19,9 @@ jobs:
           user: rselbach
           base: ''
           plugin_rss: yes
-          plugin_rss_description: yes
           plugin_rss_limit: 4
           template: classic
-          plugin_rss_url: https://rselbach.com/feed/
+          plugin_rss_source: https://rselbach.com/feed/
 
   github-metrics:
     runs-on: ubuntu-latest
