@@ -16,11 +16,3 @@
 <a href="https://rselbach.com">
     <img align="center" width="49%" src="./blog.svg" />
 </a>
-
-<a href="https://github.com/rselbach">
-    <img align="center" width="49%" src="./languages.svg" />
-</a>
-
-<a href="https://github.com/rselbach">
-    <img align="center" width="49%" src="./lines-of-code.svg" />
-</a>
