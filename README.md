@@ -13,6 +13,6 @@
   <img align="center" width="49%" src="./calendar.svg" />
 </a>
 
-<a href="https://rselbach.com">
+<!-- <a href="https://rselbach.com">
     <img align="center" width="49%" src="./blog.svg" />
-</a>
+</a> -->
