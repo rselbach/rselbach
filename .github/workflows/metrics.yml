@@ -21,7 +21,7 @@ jobs:
           plugin_rss: yes
           plugin_rss_limit: 4
           template: classic
-          plugin_rss_source: https://rselbach.com/feed/
+          plugin_rss_source: https://rselbach.com/index.xml
 
   header:
     runs-on: ubuntu-latest
